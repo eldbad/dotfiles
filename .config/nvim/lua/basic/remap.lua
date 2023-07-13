@@ -13,9 +13,5 @@ vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
 
-vim.keymap.set("n", "<leader>e", ":NvimTreeOpen<cr>")
-
 vim.keymap.set('n', '<leader>w', function() vim.diagnostic.open_float() end)
-vim.keymap.set('n', '<leader>t', ":TroubleToggle<CR>")
 
-vim.keymap.set('n', '<leader>d', ":DiffviewToggle<CR>")
