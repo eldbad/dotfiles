@@ -13,10 +13,12 @@ cmp.setup {
         end
     },
     sources = cmp.config.sources {
+        { name = 'nvim_lsp' },
         { name = 'luasnip' },
         { name = 'buffer' },
         { name = 'path' },
         { name = 'crates' },
+        { name = 'nvim_lua' },
     },
     mapping = cmp.mapping.preset.insert {
         ['<C-d>'] = cmp.mapping.scroll_docs(-4),

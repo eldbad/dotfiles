@@ -18,4 +18,8 @@ vim.g.loaded_netrwPlugin = 1
 
 vim.opt.termguicolors = true
 
-vim.cmd "colorscheme gruvbox"
+vim.cmd "set signcolumn=yes"
+
+vim.cmd "set background=light"
+vim.g.everforest_background="hard"
+vim.cmd "colorscheme everforest"

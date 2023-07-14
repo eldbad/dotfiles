@@ -12,6 +12,8 @@ return require('packer').startup(function(use)
     -- Colorschemes
     use 'tanvirtin/monokai.nvim'
     use 'ellisonleao/gruvbox.nvim'
+    use 'sainnhe/everforest'
+    use 'Mofiqul/vscode.nvim'
 
     -- Autocompletion
     use 'hrsh7th/nvim-cmp'

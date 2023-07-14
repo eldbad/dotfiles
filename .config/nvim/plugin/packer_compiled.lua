@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/home/eldar/.local/share/nvim/site/pack/packer/start/esqueleto.nvim",
     url = "https://github.com/cvigilv/esqueleto.nvim"
   },
+  everforest = {
+    loaded = true,
+    path = "/home/eldar/.local/share/nvim/site/pack/packer/start/everforest",
+    url = "https://github.com/sainnhe/everforest"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/eldar/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -308,6 +313,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/eldar/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vscode.nvim"] = {
+    loaded = true,
+    path = "/home/eldar/.local/share/nvim/site/pack/packer/start/vscode.nvim",
+    url = "https://github.com/Mofiqul/vscode.nvim"
   }
 }
 
