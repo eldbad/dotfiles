@@ -18,6 +18,8 @@ vim.g.loaded_netrwPlugin = 1
 
 vim.opt.termguicolors = true
 
+vim.opt.shell = '/usr/bin/zsh'
+
 vim.cmd "set signcolumn=yes"
 
 vim.cmd "set background=light"

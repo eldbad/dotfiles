@@ -35,6 +35,12 @@ return require('packer').startup(function(use)
     use 'williamboman/mason-lspconfig.nvim'
     use 'jose-elias-alvarez/null-ls.nvim'
 
+    -- Languages
+    use 'ionide/Ionide-vim'
+    use 'peterhoeg/vim-qml'
+    use 'simrat39/rust-tools.nvim'
+    use 'OmniSharp/Omnisharp-vim'
+
     -- FuzzyFinder
     use 'nvim-telescope/telescope.nvim'
 
@@ -55,9 +61,6 @@ return require('packer').startup(function(use)
 
     -- Surrounding brackets
     use 'kylechui/nvim-surround'
-
-    -- Fsharp lsp
-    -- use 'ionide/Ionide-vim'
 
     -- Git
     use 'tpope/vim-fugitive'
@@ -84,10 +87,10 @@ return require('packer').startup(function(use)
 
     -- Line at the bottom
     use 'nvim-lualine/lualine.nvim'
+    use 'arkav/lualine-lsp-progress'
 
     -- Indent line
     use 'lukas-reineke/indent-blankline.nvim'
-
 
     -- Git signs in file
     use 'lewis6991/gitsigns.nvim'
@@ -95,16 +98,13 @@ return require('packer').startup(function(use)
     -- EditorConfig
     use 'editorconfig/editorconfig-vim'
 
-    -- Rust
-    use 'simrat39/rust-tools.nvim'
-
     -- Templates
     use 'cvigilv/esqueleto.nvim'
-
-    -- QML
-    -- use 'peterhoeg/vim-qml'
 
     -- Tests
     use 'nvim-neotest/neotest'
     use 'andythigpen/nvim-coverage'
+
+    -- Bookmarks
+    use 'tomasky/bookmarks.nvim'
 end)
