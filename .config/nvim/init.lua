@@ -20,3 +20,5 @@ require("plugins.treesitter")
 require("plugins.trouble")
 
 require("plugins.lsp")
+
+require("plugins.dap")

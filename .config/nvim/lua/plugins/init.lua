@@ -71,6 +71,10 @@ return require('packer').startup(function(use)
 
     -- Debugger
     use 'mfussenegger/nvim-dap'
+    use 'rcarriga/nvim-dap-ui'
+    use 'leoluz/nvim-dap-go'
+    use 'theHamsta/nvim-dap-virtual-text'
+    use 'nvim-telescope/telescope-dap.nvim'
 
     -- Autotag html
     use 'windwp/nvim-ts-autotag'
