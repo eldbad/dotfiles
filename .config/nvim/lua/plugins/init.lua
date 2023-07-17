@@ -34,12 +34,22 @@ return require('packer').startup(function(use)
     use 'williamboman/mason.nvim'
     use 'williamboman/mason-lspconfig.nvim'
     use 'jose-elias-alvarez/null-ls.nvim'
+    use {'j-hui/fidget.nvim', tag = 'legacy'}
 
     -- Languages
     use 'ionide/Ionide-vim'
     use 'peterhoeg/vim-qml'
     use 'simrat39/rust-tools.nvim'
-    use 'OmniSharp/Omnisharp-vim'
+
+    -- 󱚣 Copilot 
+    -- use 'github/copilot.vim'
+
+    -- Debugger
+    use 'mfussenegger/nvim-dap'
+    use 'rcarriga/nvim-dap-ui'
+    use 'leoluz/nvim-dap-go'
+    use 'theHamsta/nvim-dap-virtual-text'
+    use 'nvim-telescope/telescope-dap.nvim'
 
     -- FuzzyFinder
     use 'nvim-telescope/telescope.nvim'
@@ -53,6 +63,12 @@ return require('packer').startup(function(use)
     use 'akinsho/bufferline.nvim'
     use 'moll/vim-bbye'
 
+    -- Line at the bottom
+    use 'nvim-lualine/lualine.nvim'
+
+    -- Indent line
+    use 'lukas-reineke/indent-blankline.nvim'
+
     -- To show error in another window
     use 'folke/trouble.nvim'
 
@@ -65,16 +81,10 @@ return require('packer').startup(function(use)
     -- Git
     use 'tpope/vim-fugitive'
     use 'sindrets/diffview.nvim'
+    use 'lewis6991/gitsigns.nvim'
 
     -- Autopairs
     use 'windwp/nvim-autopairs'
-
-    -- Debugger
-    use 'mfussenegger/nvim-dap'
-    use 'rcarriga/nvim-dap-ui'
-    use 'leoluz/nvim-dap-go'
-    use 'theHamsta/nvim-dap-virtual-text'
-    use 'nvim-telescope/telescope-dap.nvim'
 
     -- Autotag html
     use 'windwp/nvim-ts-autotag'
@@ -88,16 +98,6 @@ return require('packer').startup(function(use)
 
     -- Terminal
     use 'akinsho/toggleterm.nvim'
-
-    -- Line at the bottom
-    use 'nvim-lualine/lualine.nvim'
-    use 'arkav/lualine-lsp-progress'
-
-    -- Indent line
-    use 'lukas-reineke/indent-blankline.nvim'
-
-    -- Git signs in file
-    use 'lewis6991/gitsigns.nvim'
 
     -- EditorConfig
     use 'editorconfig/editorconfig-vim'

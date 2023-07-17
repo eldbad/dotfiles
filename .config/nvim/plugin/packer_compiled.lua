@@ -94,11 +94,6 @@ _G.packer_plugins = {
     path = "/home/eldar/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["Omnisharp-vim"] = {
-    loaded = true,
-    path = "/home/eldar/.local/share/nvim/site/pack/packer/start/Omnisharp-vim",
-    url = "https://github.com/OmniSharp/Omnisharp-vim"
-  },
   ["bookmarks.nvim"] = {
     loaded = true,
     path = "/home/eldar/.local/share/nvim/site/pack/packer/start/bookmarks.nvim",
@@ -164,6 +159,11 @@ _G.packer_plugins = {
     path = "/home/eldar/.local/share/nvim/site/pack/packer/start/everforest",
     url = "https://github.com/sainnhe/everforest"
   },
+  ["fidget.nvim"] = {
+    loaded = true,
+    path = "/home/eldar/.local/share/nvim/site/pack/packer/start/fidget.nvim",
+    url = "https://github.com/j-hui/fidget.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/eldar/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -183,11 +183,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/eldar/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
-  },
-  ["lualine-lsp-progress"] = {
-    loaded = true,
-    path = "/home/eldar/.local/share/nvim/site/pack/packer/start/lualine-lsp-progress",
-    url = "https://github.com/arkav/lualine-lsp-progress"
   },
   ["lualine.nvim"] = {
     loaded = true,

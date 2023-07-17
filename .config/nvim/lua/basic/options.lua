@@ -1,5 +1,4 @@
 vim.opt.nu = true
-
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
@@ -25,3 +24,4 @@ vim.cmd "set signcolumn=yes"
 vim.cmd "set background=light"
 vim.g.everforest_background="hard"
 vim.cmd "colorscheme everforest"
+

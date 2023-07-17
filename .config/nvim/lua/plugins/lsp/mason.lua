@@ -2,6 +2,8 @@ local servers = {
     "pyright",
     "lua_ls",
     "jsonls",
+    "rust_analyzer",
+    "omnisharp",
 }
 require("mason").setup()
 require("mason-lspconfig").setup({
