@@ -3,7 +3,7 @@ require("plugins.dap.virtual-text")
 local dapui = require("plugins.dap.ui")
 local dap = require('dap')
 
-vim.keymap.set("n", "tt", function() dap.continue() end)
+vim.keymap.set("n", "<leader>dd", function() dap.continue() end)
 vim.keymap.set("n", "<C-z>", function() dap.step_over() end)
 vim.keymap.set("n", "<C-x>", function() dap.step_into() end)
 vim.keymap.set("n", "<C-s>", function() dap.step_out() end)

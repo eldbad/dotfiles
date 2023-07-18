@@ -97,7 +97,7 @@ _G.packer_plugins = {
   ["bookmarks.nvim"] = {
     loaded = true,
     path = "/home/eldar/.local/share/nvim/site/pack/packer/start/bookmarks.nvim",
-    url = "https://github.com/tomasky/bookmarks.nvim"
+    url = "https://github.com/crusj/bookmarks.nvim"
   },
   ["bufferline.nvim"] = {
     loaded = true,
@@ -174,6 +174,11 @@ _G.packer_plugins = {
     path = "/home/eldar/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["gopher.nvim"] = {
+    loaded = true,
+    path = "/home/eldar/.local/share/nvim/site/pack/packer/start/gopher.nvim",
+    url = "https://github.com/olexsmir/gopher.nvim"
+  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/home/eldar/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
@@ -208,6 +213,31 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/eldar/.local/share/nvim/site/pack/packer/start/neotest",
     url = "https://github.com/nvim-neotest/neotest"
+  },
+  ["neotest-dotnet"] = {
+    loaded = true,
+    path = "/home/eldar/.local/share/nvim/site/pack/packer/start/neotest-dotnet",
+    url = "https://github.com/Issafalcon/neotest-dotnet"
+  },
+  ["neotest-elixir"] = {
+    loaded = true,
+    path = "/home/eldar/.local/share/nvim/site/pack/packer/start/neotest-elixir",
+    url = "https://github.com/jfpedroza/neotest-elixir"
+  },
+  ["neotest-go"] = {
+    loaded = true,
+    path = "/home/eldar/.local/share/nvim/site/pack/packer/start/neotest-go",
+    url = "https://github.com/nvim-neotest/neotest-go"
+  },
+  ["neotest-jest"] = {
+    loaded = true,
+    path = "/home/eldar/.local/share/nvim/site/pack/packer/start/neotest-jest",
+    url = "https://github.com/nvim-neotest/neotest-jest"
+  },
+  ["neotest-rust"] = {
+    loaded = true,
+    path = "/home/eldar/.local/share/nvim/site/pack/packer/start/neotest-rust",
+    url = "https://github.com/rouge8/neotest-rust"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -284,6 +314,11 @@ _G.packer_plugins = {
     path = "/home/eldar/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  ["package-info.nvim"] = {
+    loaded = true,
+    path = "/home/eldar/.local/share/nvim/site/pack/packer/start/package-info.nvim",
+    url = "https://github.com/vuki656/package-info.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/eldar/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -313,6 +348,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/eldar/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
     url = "https://github.com/simrat39/rust-tools.nvim"
+  },
+  ["scretch.nvim"] = {
+    loaded = true,
+    path = "/home/eldar/.local/share/nvim/site/pack/packer/start/scretch.nvim",
+    url = "https://github.com/Sonicfury/scretch.nvim"
   },
   ["symbols-outline.nvim"] = {
     loaded = true,

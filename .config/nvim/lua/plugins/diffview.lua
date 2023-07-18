@@ -7,4 +7,5 @@ vim.api.nvim_create_user_command("DiffviewToggle", function(e)
     vim.cmd("DiffviewOpen " .. e.args)
   end
 end, { nargs = "*" })
-vim.keymap.set('n', '<leader>d', ":DiffviewToggle<CR>")
+
+vim.keymap.set('n', '<leader>dv', ":DiffviewToggle<CR>")

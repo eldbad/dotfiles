@@ -24,6 +24,7 @@ return require('packer').startup(function(use)
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-nvim-lua'
     use 'Saecki/crates.nvim'
+    use 'vuki656/package-info.nvim'
 
     -- Snippets
     use 'L3MON4D3/LuaSnip'
@@ -40,6 +41,7 @@ return require('packer').startup(function(use)
     use 'ionide/Ionide-vim'
     use 'peterhoeg/vim-qml'
     use 'simrat39/rust-tools.nvim'
+    use 'olexsmir/gopher.nvim'
 
     -- 󱚣 Copilot 
     -- use 'github/copilot.vim'
@@ -63,6 +65,9 @@ return require('packer').startup(function(use)
     use 'akinsho/bufferline.nvim'
     use 'moll/vim-bbye'
 
+    -- Line at the top
+    -- use 'Bekaboo/dropbar.nvim'
+
     -- Line at the bottom
     use 'nvim-lualine/lualine.nvim'
 
@@ -75,9 +80,6 @@ return require('packer').startup(function(use)
     -- To show code structure in another window 
     use 'simrat39/symbols-outline.nvim'
 
-    -- Surrounding brackets
-    use 'kylechui/nvim-surround'
-
     -- Git
     use 'tpope/vim-fugitive'
     use 'sindrets/diffview.nvim'
@@ -85,6 +87,9 @@ return require('packer').startup(function(use)
 
     -- Autopairs
     use 'windwp/nvim-autopairs'
+
+    -- Surrounding brackets
+    use 'kylechui/nvim-surround'
 
     -- Autotag html
     use 'windwp/nvim-ts-autotag'
@@ -107,8 +112,19 @@ return require('packer').startup(function(use)
 
     -- Tests
     use 'nvim-neotest/neotest'
+    use 'nvim-neotest/neotest-go'
+    use 'Issafalcon/neotest-dotnet'
+    use 'rouge8/neotest-rust'
+    use 'nvim-neotest/neotest-jest'
+    use 'jfpedroza/neotest-elixir'
     use 'andythigpen/nvim-coverage'
 
     -- Bookmarks
-    use 'tomasky/bookmarks.nvim'
+    use 'crusj/bookmarks.nvim'
+
+    -- Scretch files
+    use 'Sonicfury/scretch.nvim'
+
+    -- Neorg
+    use 'nvim-neorg/neorg'
 end)
