@@ -126,5 +126,5 @@ return require('packer').startup(function(use)
     use 'Sonicfury/scretch.nvim'
 
     -- Neorg
-    use 'nvim-neorg/neorg'
+    use {'nvim-neorg/neorg', run = ":Neorg sync-parsers" }
 end)

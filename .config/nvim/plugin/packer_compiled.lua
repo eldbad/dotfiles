@@ -209,6 +209,11 @@ _G.packer_plugins = {
     path = "/home/eldar/.local/share/nvim/site/pack/packer/start/monokai.nvim",
     url = "https://github.com/tanvirtin/monokai.nvim"
   },
+  neorg = {
+    loaded = true,
+    path = "/home/eldar/.local/share/nvim/site/pack/packer/start/neorg",
+    url = "https://github.com/nvim-neorg/neorg"
+  },
   neotest = {
     loaded = true,
     path = "/home/eldar/.local/share/nvim/site/pack/packer/start/neotest",
