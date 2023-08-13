@@ -74,10 +74,13 @@ return require('packer').startup(function(use)
     -- Indent line
     use 'lukas-reineke/indent-blankline.nvim'
 
+    -- Highlight other uses of word under cursor
+    use 'RRethy/vim-illuminate'
+
     -- To show error in another window
     use 'folke/trouble.nvim'
 
-    -- To show code structure in another window 
+    -- To show code structure in another window
     use 'simrat39/symbols-outline.nvim'
 
     -- Git
