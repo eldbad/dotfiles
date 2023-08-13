@@ -35,7 +35,7 @@ return require('packer').startup(function(use)
     use 'williamboman/mason.nvim'
     use 'williamboman/mason-lspconfig.nvim'
     use 'jose-elias-alvarez/null-ls.nvim'
-    use {'j-hui/fidget.nvim', tag = 'legacy'}
+    use { 'j-hui/fidget.nvim', tag = 'legacy' }
 
     -- Languages
     use 'ionide/Ionide-vim'
@@ -43,7 +43,7 @@ return require('packer').startup(function(use)
     use 'simrat39/rust-tools.nvim'
     use 'olexsmir/gopher.nvim'
 
-    -- 󱚣 Copilot 
+    -- 󱚣 Copilot
     -- use 'github/copilot.vim'
 
     -- Debugger
@@ -126,5 +126,5 @@ return require('packer').startup(function(use)
     use 'Sonicfury/scretch.nvim'
 
     -- Neorg
-    use {'nvim-neorg/neorg', run = ":Neorg sync-parsers" }
+    use { 'nvim-neorg/neorg', run = ":Neorg sync-parsers" }
 end)
