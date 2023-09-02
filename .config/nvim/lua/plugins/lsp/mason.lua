@@ -5,6 +5,7 @@ local servers = {
     "omnisharp",
     "gopls",
     "rust_analyzer",
+    "angularls",
 }
 require("mason").setup()
 require("mason-lspconfig").setup({

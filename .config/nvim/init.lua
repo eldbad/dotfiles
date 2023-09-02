@@ -24,3 +24,5 @@ require("plugins.trouble")
 require("plugins.lsp")
 
 require("plugins.dap")
+
+require("plugins.lang")
