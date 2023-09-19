@@ -60,8 +60,8 @@ cmp.setup {
         { name = 'path' },
     },
     mapping = cmp.mapping.preset.insert {
-        ['<C-d>'] = cmp.mapping.scroll_docs(-4),
-        ['<C-u>'] = cmp.mapping.scroll_docs(4),
+        ['<C-d>'] = cmp.mapping.scroll_docs(4),
+        ['<C-u>'] = cmp.mapping.scroll_docs(-4),
         ['<C-y>'] = cmp.mapping.confirm(),
         ['<C-e>'] = cmp.mapping.abort(),
         ['<C-n>'] = cmp.mapping.select_next_item(),
