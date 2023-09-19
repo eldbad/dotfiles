@@ -87,6 +87,7 @@ return require('packer').startup(function(use)
     use 'tpope/vim-fugitive'
     use 'sindrets/diffview.nvim'
     use 'lewis6991/gitsigns.nvim'
+    use 'wintermute-cell/gitignore.nvim'
 
     -- Autopairs
     use 'windwp/nvim-autopairs'
