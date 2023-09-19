@@ -1,134 +1,147 @@
-vim.cmd [[packadd packer.nvim]]
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+    vim.fn.system({
+        "git",
+        "clone",
+        "--filter=blob:none",
+        "https://github.com/folke/lazy.nvim.git",
+        "--branch=stable", -- latest stable release
+        lazypath,
+    })
+end
+vim.opt.rtp:prepend(lazypath)
 
-return require('packer').startup(function(use)
-    use 'wbthomason/packer.nvim'
+vim.g.mapleader = " "
 
+local plugins = {
     -- Some dependencies
-    use 'nvim-lua/popup.nvim'
-    use 'nvim-lua/plenary.nvim'
-    use 'nvim-tree/nvim-web-devicons'
-    use 'antoinemadec/FixCursorHold.nvim'
+    'nvim-lua/popup.nvim',
+    'nvim-lua/plenary.nvim',
+    'nvim-tree/nvim-web-devicons',
+    'antoinemadec/FixCursorHold.nvim',
 
     -- Colorschemes
-    use 'tanvirtin/monokai.nvim'
-    use 'ellisonleao/gruvbox.nvim'
-    use 'sainnhe/everforest'
-    use 'Mofiqul/vscode.nvim'
+    { 'tanvirtin/monokai.nvim',   priority = 1000 },
+    { 'ellisonleao/gruvbox.nvim', priority = 1000 },
+    { 'sainnhe/everforest',       priority = 1000 },
+    { 'Mofiqul/vscode.nvim',      priority = 1000 },
 
     -- Autocompletion
-    use 'hrsh7th/nvim-cmp'
-    use 'hrsh7th/cmp-buffer'
-    use 'hrsh7th/cmp-path'
-    use 'hrsh7th/cmp-cmdline'
-    use 'saadparwaiz1/cmp_luasnip'
-    use 'hrsh7th/cmp-nvim-lsp'
-    use 'hrsh7th/cmp-nvim-lua'
-    use 'Saecki/crates.nvim'
-    use 'vuki656/package-info.nvim'
+    'hrsh7th/nvim-cmp',
+    'hrsh7th/cmp-buffer',
+    'hrsh7th/cmp-path',
+    'hrsh7th/cmp-cmdline',
+    'saadparwaiz1/cmp_luasnip',
+    'hrsh7th/cmp-nvim-lsp',
+    'hrsh7th/cmp-nvim-lua',
+    'Saecki/crates.nvim',
+    'vuki656/package-info.nvim',
 
     -- Snippets
-    use 'L3MON4D3/LuaSnip'
-    use 'rafamadriz/friendly-snippets'
+    'L3MON4D3/LuaSnip',
+    'rafamadriz/friendly-snippets',
 
     -- LSP
-    use 'neovim/nvim-lspconfig'
-    use 'williamboman/mason.nvim'
-    use 'williamboman/mason-lspconfig.nvim'
-    use 'jose-elias-alvarez/null-ls.nvim'
-    use { 'j-hui/fidget.nvim', tag = 'legacy' }
+    'neovim/nvim-lspconfig',
+    'williamboman/mason.nvim',
+    'williamboman/mason-lspconfig.nvim',
+    'jose-elias-alvarez/null-ls.nvim',
+    { 'j-hui/fidget.nvim', tag = 'legacy' },
 
     -- Languages
-    use 'ionide/Ionide-vim'
-    use 'peterhoeg/vim-qml'
-    use 'simrat39/rust-tools.nvim'
-    use 'olexsmir/gopher.nvim'
+    'ionide/Ionide-vim',
+    'peterhoeg/vim-qml',
+    'simrat39/rust-tools.nvim',
+    'olexsmir/gopher.nvim',
 
     -- 󱚣 Copilot
     -- use 'github/copilot.vim'
 
     -- Debugger
-    use 'mfussenegger/nvim-dap'
-    use 'rcarriga/nvim-dap-ui'
-    use 'leoluz/nvim-dap-go'
-    use 'theHamsta/nvim-dap-virtual-text'
-    use 'nvim-telescope/telescope-dap.nvim'
+    'mfussenegger/nvim-dap',
+    'rcarriga/nvim-dap-ui',
+    'leoluz/nvim-dap-go',
+    'theHamsta/nvim-dap-virtual-text',
+    'nvim-telescope/telescope-dap.nvim',
 
     -- FuzzyFinder
-    use 'nvim-telescope/telescope.nvim'
+    'nvim-telescope/telescope.nvim',
 
     -- Treesitter
-    use 'nvim-treesitter/nvim-treesitter'
-    use 'nvim-treesitter/playground'
+    'nvim-treesitter/nvim-treesitter',
+    'nvim-treesitter/playground',
 
     -- Bufferline and Nvim-Tree
-    use 'nvim-tree/nvim-tree.lua'
-    use 'akinsho/bufferline.nvim'
-    use 'moll/vim-bbye'
+    'nvim-tree/nvim-tree.lua',
+    'akinsho/bufferline.nvim',
+    'moll/vim-bbye',
 
     -- Line at the top
     -- use 'Bekaboo/dropbar.nvim'
 
     -- Line at the bottom
-    use 'nvim-lualine/lualine.nvim'
+    'nvim-lualine/lualine.nvim',
 
     -- Indent line
-    use 'lukas-reineke/indent-blankline.nvim'
+    'lukas-reineke/indent-blankline.nvim',
 
     -- Highlight other uses of word under cursor
-    use 'RRethy/vim-illuminate'
+    'RRethy/vim-illuminate',
 
     -- To show error in another window
-    use 'folke/trouble.nvim'
+    'folke/trouble.nvim',
 
     -- To show code structure in another window
-    use 'simrat39/symbols-outline.nvim'
+    'simrat39/symbols-outline.nvim',
 
     -- Git
-    use 'tpope/vim-fugitive'
-    use 'sindrets/diffview.nvim'
-    use 'lewis6991/gitsigns.nvim'
-    use 'wintermute-cell/gitignore.nvim'
+    'tpope/vim-fugitive',
+    'sindrets/diffview.nvim',
+    'lewis6991/gitsigns.nvim',
+    'wintermute-cell/gitignore.nvim',
 
     -- Autopairs
-    use 'windwp/nvim-autopairs'
+    'windwp/nvim-autopairs',
 
     -- Surrounding brackets
-    use 'kylechui/nvim-surround'
+    'kylechui/nvim-surround',
 
     -- Autotag html
-    use 'windwp/nvim-ts-autotag'
+    'windwp/nvim-ts-autotag',
 
     -- Comments
-    use 'numToStr/Comment.nvim'
+    'numToStr/Comment.nvim',
 
     -- Folding code
-    use 'kevinhwang91/promise-async'
-    use 'kevinhwang91/nvim-ufo'
+    'kevinhwang91/promise-async',
+    'kevinhwang91/nvim-ufo',
 
     -- Terminal
-    use 'akinsho/toggleterm.nvim'
+    'akinsho/toggleterm.nvim',
 
     -- EditorConfig
-    use 'editorconfig/editorconfig-vim'
+    'editorconfig/editorconfig-vim',
 
     -- Templates
-    use 'cvigilv/esqueleto.nvim'
+    'cvigilv/esqueleto.nvim',
 
     -- Tests
-    use 'nvim-neotest/neotest'
-    use 'nvim-neotest/neotest-go'
-    use 'Issafalcon/neotest-dotnet'
-    use 'rouge8/neotest-rust'
-    use 'nvim-neotest/neotest-jest'
-    use 'jfpedroza/neotest-elixir'
-    use 'andythigpen/nvim-coverage'
+    'nvim-neotest/neotest',
+    'nvim-neotest/neotest-go',
+    'Issafalcon/neotest-dotnet',
+    'rouge8/neotest-rust',
+    'nvim-neotest/neotest-jest',
+    'jfpedroza/neotest-elixir',
+    'andythigpen/nvim-coverage',
 
     -- Bookmarks
-    use 'crusj/bookmarks.nvim'
+    'crusj/bookmarks.nvim',
 
     -- Scretch files
-    use 'Sonicfury/scretch.nvim'
+    'Sonicfury/scretch.nvim',
 
     -- Neorg
-    use { 'nvim-neorg/neorg', run = ":Neorg sync-parsers" }
-end)
+    { 'nvim-neorg/neorg',  build = ":Neorg sync-parsers" },
+}
+
+require("lazy").setup(plugins, {})

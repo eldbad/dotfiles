@@ -22,6 +22,5 @@ vim.opt.shell = '/usr/bin/zsh'
 vim.cmd "set signcolumn=yes"
 
 vim.cmd "set background=dark"
-vim.g.everforest_background="hard"
+vim.g.everforest_background = "hard"
 vim.cmd "colorscheme gruvbox"
-
