@@ -1,0 +1,89 @@
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+" Source your .vimrc
+" source ~/.vimrc
+let mapleader = " "
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+" Do incremental searching.
+set incsearch
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+
+xmap J :m '>+1<CR>gv=gv'
+xmap K :m '<-2<CR>gv=gv'
+nmap <C-d> <C-d>zz
+nmap <C-u> <C-u>zz
+
+nmap <leader>y \"+y
+xmap <leader>y \"+y
+nmap <leader>Y \"+Y
+
+nmap <leader>w <Action>(ShowErrorDescription)
+
+" Debugging
+nmap <leader>dd <Action>(Debug)
+nmap <C-z> <Action>(StepOver)
+nmap <C-x> <Action>(StepInto)
+nmap <C-s> <Action>(StepOut)
+nmap <leader>b <Action>(ToggleLineBreakpoint)
+nmap <leader>B <Action>(Add)
+nmap <leader>du <Action>(ActivateDebugToolWindow)
+
+" LSP
+nmap gd <Action>(GoToDeclaration)
+nmap K <Action>(QuickJavaDoc)
+nmap gi <Action>(GoToImplementation)
+nmap <leader>rn <Action>(RenameElement)
+nmap gr <Action>(ShowUsages)
+" Code actions
+" goto_prev
+" open_float
+" goto_next
+
+" Tabs
+nmap <S-l> <Action>(NextTab)
+nmap <S-h> <Action>(PreviousTab)
+nmap <leader>q <Action>(CloseContent)
+" nmap <leader><S-q> <Action>(CloseContent)
+
+" cmp
+nmap <C-n> <Action>(Popupmenu-selectNext)
+nmap <C-p> <Action>(Popupmenu-selectPrevious)
+nmap <C-y> <Action>(Popupmenu-return)
+nmap <C-e> <Action>(Popupmenu-cancel)
+
+" Additional
+nmap <leader>a <Action>(Run)
+
+" Symbols
+nmap <leader>s <Action>(ActivateStructureToolWindow)
+
+" Telescope
+" Git nmap <leader>fd <Action>()
+nmap <leader>ff <Action>(GoToFile)
+nmap <leader>fg <Action>(TextSearchAction)
+nmap <leader>fb <Action>(GoToSymbol)
+" Help tags: nmap <leader>fh <Action>()
+
+" Problems
+nmap <leader>t <Action>(ActivateProblemsViewToolWindow)
+
+" set ideajoin
