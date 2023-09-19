@@ -11,7 +11,7 @@ fi
 
 source "$HOME/.cargo/env"
 
-alias ls="exa -l"
+alias ls="eza -l"
 alias grep="grep --color --line-number"
 
 export HISTCONTROL=ignorespace
