@@ -23,4 +23,4 @@ vim.cmd "set signcolumn=yes"
 
 vim.cmd "set background=dark"
 vim.g.everforest_background = "hard"
-vim.cmd "colorscheme gruvbox"
+-- vim.cmd "colorscheme gruvbox"

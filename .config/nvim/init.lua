@@ -1,4 +1,9 @@
+require("basic.options")
+require("basic.remap")
+
+
 require("plugins")
+
 require("plugins.bookmarks")
 require("plugins.bufferline")
 require("plugins.cmp")
@@ -23,7 +28,3 @@ require("plugins.lsp")
 require("plugins.dap")
 
 require("plugins.lang")
-
-
-require("basic.options")
-require("basic.remap")

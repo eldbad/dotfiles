@@ -13,6 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 vim.g.mapleader = " "
 
+
 local plugins = {
     -- Some dependencies
     'nvim-lua/popup.nvim',
@@ -21,10 +22,18 @@ local plugins = {
     'antoinemadec/FixCursorHold.nvim',
 
     -- Colorschemes
-    { 'tanvirtin/monokai.nvim',   priority = 1000 },
-    { 'ellisonleao/gruvbox.nvim', priority = 1000 },
-    { 'sainnhe/everforest',       priority = 1000 },
-    { 'Mofiqul/vscode.nvim',      priority = 1000 },
+    { 'tanvirtin/monokai.nvim', priority = 1000, lazy = false },
+    {
+        'ellisonleao/gruvbox.nvim',
+        priority = 1000,
+        lazy = false,
+        config = function()
+            -- load the colorscheme here
+            vim.cmd([[colorscheme gruvbox]])
+        end,
+    },
+    { 'sainnhe/everforest',     priority = 1000, lazy = false },
+    { 'Mofiqul/vscode.nvim',    priority = 1000, lazy = false },
 
     -- Autocompletion
     'hrsh7th/nvim-cmp',
